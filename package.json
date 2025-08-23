@@ -1,0 +1,23 @@
+{
+  "name": "super-maker",
+  "version": "0.1.18",
+  "description": "data generator",
+  "main": "./src/index.js",
+    "exports": {
+        ".": "./src/index.js"
+    },
+    "type": "module",
+  "author": {
+    "name": "Andrew Shedov",
+    "url": "https://shedov.top"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndrewShedov/superMaker.git"
+  },
+  "homepage": "https://github.com/AndrewShedov/superMaker",
+  "files": [
+        "src"
+    ]
+}
