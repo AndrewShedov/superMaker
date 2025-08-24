@@ -26,7 +26,12 @@ const getByPath = (obj, path) => {
 };
 
 // one sentence generator
-const sentence = ({ wordMin = 4, wordMax = 10, hashtagMin = 0, hashtagMax = 2 }) => {
+const sentence = ({
+  wordMin = 0,
+  wordMax = 0,
+  hashtagMin = 0,
+  hashtagMax = 0
+}) => {
   const wordsCount = int({ min: wordMin, max: wordMax });
   const sentenceWords = Array.from({ length: wordsCount }, () => word(storage.words));
   const availableTags = [...new Set(storage.hashtags)];
@@ -56,12 +61,12 @@ const sentence = ({ wordMin = 4, wordMax = 10, hashtagMin = 0, hashtagMax = 2 })
 };
 
 const sentences = ({
-  sentenceMin = 1,
-  sentenceMax = 5,
-  wordMin = 4,
-  wordMax = 10,
+  sentenceMin = 0,
+  sentenceMax = 0,
+  wordMin = 0,
+  wordMax = 0,
   hashtagMin = 0,
-  hashtagMax = 2
+  hashtagMax = 0
 }) => {
 
   const count = int({
