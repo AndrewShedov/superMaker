@@ -100,7 +100,7 @@ const fullText = {
 
 const randomEmail = (length) => `${randomBytes(length).toString("hex")}@gmail.com`;
 
-const randomBytes = (length) => randomBytes(length).toString("hex");
+const randomCrypto = (length) => randomBytes(length).toString("hex");
 
 const values = (value = {}) => {
   const storageKey = value.key ?? 'objectsIdUsers';
@@ -328,9 +328,9 @@ const superMaker = {
   10% true / 90 % false
   */
 
-  randomBytes,
+  randomCrypto,
   /*
-    customId: superMaker.randomBytes(16)
+    customId: superMaker.randomCrypto(16)
     19ed1bd590cbdf368c4ad8823f5cf25b
   */
 
