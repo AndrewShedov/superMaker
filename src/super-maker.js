@@ -103,7 +103,7 @@ const fullText = {
   }
 };
 
-const randomCryptoEmail = (length) => `${randomBytes(length).toString("hex")}@gmail.com`;
+const randomEmailCrypto = (length) => `${randomBytes(length).toString("hex")}@gmail.com`;
 
 const randomCrypto = (length) => randomBytes(length).toString("hex");
 
@@ -339,9 +339,9 @@ const superMaker = {
     19ed1bd590cbdf368c4ad8823f5cf25b
   */
 
-  randomCryptoEmail
+  randomEmailCrypto
   /*
-   email: superMaker.randomCryptoEmail(5)
+   email: superMaker.randomEmailCrypto(5)
    06e675b854@gmail.com
   */
 };

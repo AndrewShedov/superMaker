@@ -1,6 +1,6 @@
 {
   "name": "super-maker",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "data generator",
   "main": "./src/index.js",
     "exports": {
