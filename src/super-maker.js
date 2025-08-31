@@ -235,7 +235,10 @@ const superMaker = {
     */
 
     values
-    /*    
+    /*
+    reverse: default value - false
+    duplicate: default value - false
+        
     Usage:
     liked: superMaker.take.values({
                 key: 'users',
@@ -263,13 +266,13 @@ const superMaker = {
   Usage:
   superMaker.randomNumber();
   Returns:
-  0... Number.MAX_SAFE_INTEGER
+  0...Number.MAX_SAFE_INTEGER
   ---
   superMaker.randomNumber({ max: 500 });
   0...500
   ---
   superMaker.randomNumber({ min: 500 });
-  500...
+  500...Number.MAX_SAFE_INTEGER
   ---
   superMaker.randomNumber({ min: 100, max: 500 });
   100...500
