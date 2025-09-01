@@ -1,4 +1,11 @@
-export const int = ({ min = 0, max }) => Math.floor(Math.random() * (max - min + 1)) + min;
+export const int = ({ min = 0, max = Number.MAX_SAFE_INTEGER } = {}) => {
+  if (typeof min !== 'number' || typeof max !== 'number') {
+    throw new Error('min and max must be numbers');
+  }
+  const validMin = Math.floor(Math.min(min, max));
+  const validMax = Math.floor(Math.max(min, max));
+  return Math.floor(Math.random() * (validMax - validMin + 1)) + validMin;
+};
 
 export const randomNumber = ({ min, max, float = false, precision } = {}) => {
   if (min !== undefined && typeof min !== "number") {
