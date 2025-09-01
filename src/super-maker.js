@@ -82,7 +82,7 @@ const sentences = ({
 };
 
 // word generator
-const word = ({
+const words = ({
   key = null
 }) => {
   const storageKey = key;
@@ -153,10 +153,10 @@ const superMaker = {
 
   // lorem from - super-maker-storage.json
   lorem: {
-    word,
+    words,
     /*
     Usage:
-    superMaker.lorem.word(key: 'words'),
+    superMaker.lorem.words({key: 'words'}),
     Returns:
     astronae
     */
