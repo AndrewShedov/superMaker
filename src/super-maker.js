@@ -60,6 +60,8 @@ const sentence = ({
     : sentenceWords.join(" ") + ".";
 };
 
+
+// sentence generator
 const sentences = ({
   sentenceMin = 0,
   sentenceMax = 0,
@@ -78,6 +80,16 @@ const sentences = ({
     sentence({ wordMin, wordMax, hashtagMin, hashtagMax })
   ).join(' ');
 };
+
+// word generator
+const word = ({
+  key = null
+}) => {
+  const storageKey = key;
+  const storageArray = getByPath(storage, storageKey) ?? [];
+  if (!Array.isArray(storageArray) || storageArray.length === 0) return null;
+  word(storageArray)
+}
 
 const generateTextBlock = (params) => {
   const text = sentences(params);
@@ -108,7 +120,7 @@ const randomEmailCrypto = (length) => `${randomBytes(length).toString("hex")}@gm
 const randomCrypto = (length) => randomBytes(length).toString("hex");
 
 const values = (value = {}) => {
-  const storageKey = value.key ?? 'objectsIdUsers';
+  const storageKey = value.key;
   const storageArray = getByPath(storage, storageKey) ?? [];
 
   if (!Array.isArray(storageArray) || storageArray.length === 0) return [];
@@ -129,7 +141,7 @@ const values = (value = {}) => {
 };
 
 const value = (value = {}) => {
-  const storageKey = value.key ?? 'objectsIdUsers';
+  const storageKey = value.key;
   const storageArray = getByPath(storage, storageKey) ?? [];
   if (!Array.isArray(storageArray) || storageArray.length === 0) return null;
 
@@ -141,10 +153,10 @@ const superMaker = {
 
   // lorem from - super-maker-storage.json
   lorem: {
-    word: () => word(storage.words),
+    word,
     /*
     Usage:
-    superMaker.lorem.word(),
+    superMaker.lorem.word(key: 'words'),
     Returns:
     astronae
     */
