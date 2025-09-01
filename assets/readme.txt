@@ -142,8 +142,7 @@ value
 Usage 1: 
     export async function generatingData({ createdAt, updatedAt }) {
     const user = superMaker.take.value({
-            key: 'users',
-            fromEnd: true
+            key: 'users'
         });
     return {
     user: new ObjectId(user)
@@ -178,8 +177,7 @@ When duplicate: true, the fisherYatesShuffle function is not used. Instead, elem
                 key: 'users',
                 duplicate: true,
                 min: 3,
-                max: 10,
-                reverse: true
+                max: 10
             }),
     Returns:
     liked: Array (6)(
@@ -274,15 +272,20 @@ Usage:
 ---------------------------------------  
  randomBoolean
 ---------------------------------------
-
+Usage:
 superMaker.randomBoolean();
-  50% true / 50 % false
+Returns:
+50% true / 50 % false
 
-  superMaker.randomBoolean(0.7);
-  70% true / 30 % false
+Usage:
+superMaker.randomBoolean(0.7);
+Returns:
+70% true / 30 % false
 
-  superMaker.randomBoolean(0.1);
-  10% true / 90 % false
+Usage:
+superMaker.randomBoolean(0.1);
+Returns:
+10% true / 90 % false
 
 ---------------------------------------  
  /randomBoolean

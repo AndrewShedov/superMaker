@@ -160,12 +160,12 @@ const values = (value = {}) => {
 
   if (duplicate) {
     const picked = Array.from({ length: count }, () => pick(storageArray));
-    return value.reverse ? picked.reverse() : picked;
+    return picked;
   }
 
   const shuffled = fisherYatesShuffle(storageArray);
   const sliced = shuffled.slice(0, count);
-  return value.reverse ? sliced.reverse() : sliced;
+  return sliced;
 };
 
 const value = (value = {}) => {
@@ -174,7 +174,7 @@ const value = (value = {}) => {
   if (!Array.isArray(storageArray) || storageArray.length === 0) return null;
 
   const shuffled = fisherYatesShuffle(storageArray);
-  return value.fromEnd ? shuffled.at(-1) : shuffled[0];
+  return shuffled[0];
 };
 
 const superMaker = {
