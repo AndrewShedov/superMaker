@@ -72,6 +72,7 @@ sentences
 --------------------------------------
 fullText
 --------------------------------------
+
     Number of 'wordMin, wordMax' and 'hashtagMin, hashtagMax', counted separately.
     
     By default: "key: 'words'", "key: 'hashtags'"
