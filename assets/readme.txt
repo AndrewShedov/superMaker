@@ -6,12 +6,14 @@ lorem: {
 --------------------------------------
  words
 --------------------------------------
+    
     string (words): Fisher-Yates shuffle
     number (Min, Max): Math.random()
 
     Default value for - super-maker-storage.json: "key: 'words'".
     Сan reassign, for example: "key: 'customWords'"
-    --------------
+    -------
+	
     Usage:
     superMaker.lorem.words()
     or
@@ -26,7 +28,7 @@ lorem: {
 --------------------------------------
 sentences
 --------------------------------------
-    ----------
+ 
     string (words, hashtags): Fisher-Yates shuffle
     number (Min, Max): Math.random()
 
@@ -38,7 +40,7 @@ sentences
     Сan reassign, for example: "wordsKey: 'customWords'", "hashtagsKey: 'customHashtags'"
 
     All values are optional, you can call superMaker.lorem.sentences() and it will return 'null', no error, and the database will have an empty string.
-    ----------
+    -------
 	
 	Usage:
     superMaker.lorem.sentences({
@@ -72,8 +74,8 @@ fullText
     Сan reassign, for example: "wordsKey: 'customWords'", "hashtagsKey: 'customHashtags'"
 
     All values are optional, you can call - 'superMaker.lorem.fullText.generate()' and it will return null, no error, and the database will have an empty string.
+    ------
  
-    ----------
     Usage:
     export async function generatingData({ createdAt, updatedAt }) {
     const {
@@ -139,7 +141,7 @@ take: {
 value	
 --------------------------------------
 
-Usage 1: 
+    Usage: 
     export async function generatingData({ createdAt, updatedAt }) {
     const user = superMaker.take.value({
             key: 'users'
@@ -148,13 +150,16 @@ Usage 1:
     user: new ObjectId(user)
         };
     }
+	
      Returns:
     ObjectId('683a6220c57fe3aba56e3745')
-    ---
-    Usage 2: 
+    -------
+	
+    Usage: 
     mainImageUri: superMaker.take.value({
                 key: 'images.avatar'
             }),
+			
     Returns:        
     https://raw.githubusercontent.com/AndrewShedov/superMaker/refs/heads/main/storage/images/3.webp
 	
@@ -170,8 +175,9 @@ Default values:
 
 duplicate: false
 
-When duplicate: true, the fisherYatesShuffle function is not used. Instead, elements are selected using pick, which directly chooses random elements from the array via Math.random(), fisherYatesShuffle is not suitable here because it creates a permutation of the array without repeats.
-        
+   When duplicate: true, the fisherYatesShuffle function is not used. Instead, elements are selected using pick, which directly chooses random elements from the array via Math.random(), fisherYatesShuffle is not suitable here because it creates a permutation of the array without repeats.
+   -------
+    
     Usage:
     liked: superMaker.take.values({
                 key: 'users',
@@ -179,6 +185,7 @@ When duplicate: true, the fisherYatesShuffle function is not used. Instead, elem
                 min: 3,
                 max: 10
             }),
+			
     Returns:
     liked: Array (6)(
     "683a6220c57fe3aba56e3745",
@@ -199,33 +206,66 @@ When duplicate: true, the fisherYatesShuffle function is not used. Instead, elem
 randomNumber 
 --------------------------------------
 
-Usage:
+ Usage:
   superMaker.randomNumber();
+  
   Returns:
   0...Number.MAX_SAFE_INTEGER
-  ---
+  ------
+  
+  Usage:
   superMaker.randomNumber({ max: 500 });
+  
+  Returns:
   0...500
-  ---
+  -----
+  
+  Usage:
   superMaker.randomNumber({ min: 500 });
+  
+  Returns:
   500...Number.MAX_SAFE_INTEGER
-  ---
+  -----
+  
+  Usage:
   superMaker.randomNumber({ min: 100, max: 500 });
+  
+  Returns:
   100...500
-  ---
+  -----
+  
+  Usage:
   superMaker.randomNumber({ min: 500, max: 100 });
+  
+  Returns:
   100...500 (swap)
-  ---
+  ------
+  
+  Usage:
   randomNumber({ max: -50, min: -1000 })
+  
+  Returns:
   -483
-  ---
+  ------
+  
+  Usage:
   superMaker.randomNumber({ min: 5, max: 7, float: true });
+  
+  Returns:
   for example 5.2342531
-  ---
+  -----
+  
+  Usage:
   superMaker.randomNumber({ float: true });
+  
+  Returns:
   random number between 0 and Number.MAX_SAFE_INTEGER (floating point)
-  ---
+  -----
+  
+  Usage:
   superMaker.randomNumber({ float: true }).toFixed(2)
+  
+  Returns:
   2858776836282319.50
   
 --------------------------------------
@@ -236,31 +276,39 @@ Usage:
 --------------------------------------
  randomDate 
 --------------------------------------
+
   Usage:
   date: superMaker.randomDate({
        min: { year: 2005, month: 2, day: 28, hour: 5, minute: 1, second: 1, ms: 1 },
        max: { year: 2010, month: 7, day: 21, hour: 5, minute: 1, second: 1, ms: 1 }
     }),
+	
   Returns:
   2007-04-27T01:32:19.181+00:00
-  ---
+  -------
+  
   Usage:
   date: superMaker.randomDate({
        min: { year: 2005},
        max: { year: 2010}
     }),
+
   Returns:
   2007-04-27T01:32:19.181+00:00
-  ---
+  --------
+ 
   Usage:
   date: superMaker.randomDate({
       max: { year: 2010}
     }),
+	
   Returns:
   2007-04-27T01:32:19.181+00:00
-  ---
+  --------
+  
   Usage:
   date: superMaker.randomDate(),
+  
   Returns:
   1990-04-27T01:32:19.181+00:00
   
@@ -274,13 +322,16 @@ Usage:
 ---------------------------------------
 Usage:
 superMaker.randomBoolean();
+
 Returns:
 50% true / 50 % false
+-------
 
 Usage:
 superMaker.randomBoolean(0.7);
 Returns:
 70% true / 30 % false
+--------
 
 Usage:
 superMaker.randomBoolean(0.1);
