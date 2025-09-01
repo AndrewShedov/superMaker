@@ -166,13 +166,17 @@ Usage 1:
 --------------------------------------
 values	
 --------------------------------------
-reverse: default value - false
- duplicate: default value - false
+
+Default values:
+
+duplicate: false
+
+When duplicate: true, the fisherYatesShuffle function is not used. Instead, elements are selected using pick, which directly chooses random elements from the array via Math.random(), fisherYatesShuffle is not suitable here because it creates a permutation of the array without repeats.
         
     Usage:
     liked: superMaker.take.values({
                 key: 'users',
-                duplicate: false,
+                duplicate: true,
                 min: 3,
                 max: 10,
                 reverse: true
