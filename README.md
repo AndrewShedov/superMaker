@@ -3,7 +3,7 @@
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge&logo=5865F2&logoColor=black&labelColor=black&color=%23f3f3f3)](https://github.com/AndrewShedov/mongoCollector/blob/main/LICENSE)
 
 # superMaker
-Data generator designed specifically for [turboMaker](https://www.npmjs.com/package/turbo-maker). Uses Fisher-Yates shuffle.<br>
+Data generator designed specifically for [turboMaker](https://www.npmjs.com/package/turbo-maker). Uses **Fisher-Yates shuffle**.<br>
 It allows you to generate <code>random</code> <code>texts</code>, <code>hashtags</code>, <code>words</code>, <code>full names</code>, <code>emails</code>, <code>url links</code>, and much more.
 
 ### Ideal for
