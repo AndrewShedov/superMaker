@@ -1,4 +1,4 @@
-All data that superMaker uses for generation must be stored in the file "super-maker-storage.json", hereinafter simply referred to as "storage".
+All data that superMaker uses for generation must be stored in the file 'super-maker-storage.json', hereinafter simply referred to as "storage".
 
 Description of methods
 
