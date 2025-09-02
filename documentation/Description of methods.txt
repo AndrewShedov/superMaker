@@ -6,7 +6,9 @@ lorem: {
 --------------------------------------
  words
 --------------------------------------
-    
+
+    Description:
+	
     string (words): Fisher-Yates shuffle
     number (Min, Max): Math.random()
 
@@ -31,6 +33,8 @@ lorem: {
 sentences
 --------------------------------------
  
+    Description:
+	
     string (words, hashtags): Fisher-Yates shuffle
     number (Min, Max): Math.random()
 
@@ -73,6 +77,8 @@ sentences
 fullText
 --------------------------------------
 
+    Description:
+	
     Number of 'wordMin, wordMax' and 'hashtagMin, hashtagMax', counted separately.
     
     By default: "key: 'words'", "key: 'hashtags'"
@@ -183,9 +189,10 @@ value
 values	
 --------------------------------------
 
-Default values:
-
-duplicate: false
+   Description:
+   
+   Default value:
+   duplicate: false
 
    When duplicate: true, the fisherYatesShuffle function is not used. Instead, elements are selected using pick, which directly chooses random elements from the array via Math.random(), fisherYatesShuffle is not suitable here because it creates a permutation of the array without repeats.
    -------
@@ -309,7 +316,46 @@ randomNumber
  randomDate 
 --------------------------------------
 
-  Usage:
+Description:
+
+Time format - 24 hour.
+
+Default value:
+utc: false
+
+Date Construction and Timezone Handling.
+
+The random Date function uses the new Date(year, month - 1, day, hour, minute, second, ms) constructor to create a date. By default, this constructor generates a date in the local timezone of the system. For example, if the system is in the UTC+3 timezone (e.g., Moscow), setting hour: 1 results in 1:00 in UTC+3. When toISOString() is called, the date is converted to UTC, which shifts the time. For instance, 1:00 in UTC+3 becomes 22:00 of the previous day in UTC (1:00 - 3 hours = 22:00).
+
+Timezone Offset and Daylight Saving Time (DST)
+
+The output may reflect a timezone offset due to the system's local timezone and potential Daylight Saving Time (DST) adjustments. For example:
+- In regions like Moscow, from March to October 2008, the timezone was UTC+4 due to DST, while in other periods, it was UTC+3.
+- This can result in an hour value of 21 (1 - 4 = 21) or 22 (1 - 3 = 22) when converted to UTC, depending on whether DST applies for the generated date.
+
+If the system timezone includes DST transitions (e.g., CEST, UTC+2, switching to UTC+3 during DST), this may cause additional offsets in certain date ranges.
+
+Controlling Timezone with the utc Parameter
+
+To ensure the date reflects the specified hour, minute, second, and ms values in UTC (e.g., 01:01:01.001+00:00 in toISOString()), the randomDate function supports an optional utc parameter:
+
+- When utc: true, the date is created in UTC using Date.UTC(year, month - 1, day, hour, minute, second, ms), ensuring the specified time values are preserved in UTC output.
+- When utc: false (default), the date is created in the local timezone, and toISOString() will adjust the time based on the system's timezone offset.
+
+Example:
+
+superMaker.randomDate({
+  min: { year: 2005, month: 2, day: 28, hour: 1, minute: 1, second: 1, ms: 1 },
+  max: { year: 2010, month: 7, day: 21, hour: 1, minute: 1, second: 1, ms: 1 },
+  utc: true
+})
+
+Returns: e.g., 2008-06-21T01:01:01.001+00:00
+
+Without utc: true, in a UTC+3 timezone, the same call might return 2008-06-20T22:01:01.001+00:00 due to the timezone offset.
+-----
+  
+ Usage:
   
   date: superMaker.randomDate({
        min: { year: 2005, month: 2, day: 28, hour: 5, minute: 1, second: 1, ms: 1 },
@@ -318,7 +364,7 @@ randomNumber
 	
   Returns:
   
-  2007-04-27T01:32:19.181+00:00
+  2009-04-24T01:01:01.001+00:00
   -------
   
    Usage:
