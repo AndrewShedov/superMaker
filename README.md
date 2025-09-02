@@ -22,6 +22,7 @@ It allows you to generate <code>random</code> <code>texts</code>, <code>hashtags
 7. Work with <code>arrays</code> and <code>objects</code>.
 
 ### Installation & Usage
+
 1. Install the package:
 
 ```js
