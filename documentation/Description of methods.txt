@@ -43,7 +43,7 @@ sentences
  
     Description:
 	
-	Takes words from the storage and turns them into sentences with or without hashtags and outputs them in random order, uses - Fisher-Yates shuffle.
+	Takes words from the store and turns them into sentences with or without hashtags and outputs them randomly, uses Fisher-Yates shuffling. You can specify different output variations.
 	
     string (words, hashtags): Fisher-Yates shuffle
     number (Min, Max): Math.random()
@@ -89,7 +89,7 @@ fullText
 
     Description:
 	
-    Takes words from the storage and turns them into sentences with or without hashtags and outputs them randomly, uses - Fisher-Yates shuffle. You can split the sentence into parts: title, text, hashtagsFromFullText and output each part in a separate document field.
+    Extracts words from the storage, converts them into sentences with or without hashtags, and outputs them randomly using the Fisher-Yates shuffle. You can split a sentence into parts: 'title', 'text', 'hashtagsFromFullText' and output each part in a separate document field, as well as specify different output variations.
 	
     Number of 'wordMin, wordMax' and 'hashtagMin, hashtagMax', counted separately.
     
@@ -209,7 +209,7 @@ values
 
    Description:
    
-   Outputs an array of values from storage, by key.
+   Outputs an array of values from storage by key, with various variations and output settings.
    
    Default value:
    duplicate: false
@@ -257,9 +257,9 @@ randomNumber
 
   Description:
    
-  Outputs a random number.
+  Outputs a random number in a configurable range.
 
- Usage:
+  Usage:
  
   superMaker.randomNumber();
   
@@ -350,10 +350,7 @@ randomNumber
 
 Description:
    
-Outputs a random date.
-
-Description:
-
+Displays a random date within a configurable range.
 Time format - 24 hour.
 
 Default value:
@@ -445,7 +442,7 @@ Without utc: true, in a UTC+3 timezone, the same call might return 2008-06-20T22
 
 Description:
    
-Outputs a random boolean.
+Outputs a random boolean within a configurable percentage range.
 
 Usage:
 

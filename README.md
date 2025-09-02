@@ -177,12 +177,12 @@ lorem: {
 
  **sentences**
 
- Takes words from the storage and turns them into sentences with or without hashtags and outputs them in random order, uses - **Fisher-Yates shuffle**.
+ Takes words from the store and turns them into sentences with or without hashtags and outputs them randomly, uses **Fisher-Yates shuffling**. You can specify different output variations.
 
  **fullText**
 
- Takes words from the storage and turns them into sentences with or without hashtags and outputs them randomly, uses - **Fisher-Yates shuffle**. You can     split the sentence into parts: title, text, hashtagsFromFullText and output each part in a separate document field.
- 
+Extracts words from the storage, converts them into sentences with or without hashtags, and outputs them randomly using the **Fisher-Yates shuffle**. You can split a sentence into parts: <code>title</code>, <code>text</code>, <code>hashtagsFromFullText</code> and output each part in a separate document field, as well as specify different output variations.
+
  ```js
  take: {
     value,
@@ -196,7 +196,7 @@ Returns a single value from storage, by key.
 
 **values**
 
-Outputs an array of values from storage, by key.
+Outputs an array of values from storage by key, with various variations and output settings.
 
 ```js
 randomNumber,
@@ -208,16 +208,16 @@ randomEmailCrypto
 
 **randomNumber**
 
-Outputs a random number.
+Outputs a random number in a configurable range.
 
 **randomDate**
 
-Outputs a random date.
+Displays a random date within a configurable range.
 Time format - 24 hour.
 
 **randomBoolean**
 
-Outputs a random boolean.
+Outputs a random boolean within a configurable percentage range.
 
 **randomCrypto**
 
