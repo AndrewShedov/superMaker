@@ -221,11 +221,11 @@ Outputs a random boolean.
 
 **randomCrypto**
 
-Outputs generated cryptographically strong pseudo-random data with the given length <code>(superMaker.randomCrypto(16))</code>. Uses - <code>randomBytes()</code>.
+Outputs generated cryptographically strong pseudo-random data with the given length <code>superMaker.randomCrypto(16)</code>. Uses - <code>randomBytes()</code>.
 
 **randomEmailCrypto**
 
-Outputs generated cryptographically strong pseudo-random data with a given length <code>(superMaker.randomEmailCrypto(5))</code> and frames it in '06e675b854@gmail.com'. Uses - <code>randomBytes()</code>.
+Outputs generated cryptographically strong pseudo-random data with a given length <code>superMaker.randomEmailCrypto(5)</code> and frames it in '06e675b854@gmail.com'. Uses - <code>randomBytes()</code>.
 
 [Full description of methods](https://github.com/AndrewShedov/superMaker/blob/main/documentation/Description%20of%20methods.txt)
 
