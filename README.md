@@ -14,12 +14,12 @@ It allows you to generate <code>random</code> <code>texts</code>, <code>hashtags
 ### Features
 
 1. Ability to create a fully custom data storage to be used during generation.
-2. Text generation with hashtags.
-3. Automatic hashtag extraction.
-4. Generation of <code>unique</code> <code>email</code>, <code>ID</code>, etc., using <code>randomBytes()</code>.
-5. Generation of <code>random links</code> (for example, for displaying images).
-6. Work with <code>arrays</code> and <code>objects</code>.
-7. Uses **fisherYatesShuffle** - a reliable shuffling algorithm.
+2. Uses **Uses Fisher-Yates shuffle** - a reliable shuffling algorithm.
+3. Text generation with hashtags.
+4. Automatic hashtag extraction.
+5. Generation of <code>unique</code> <code>email</code>, <code>ID</code>, etc., using <code>randomBytes()</code>.
+6. Generation of <code>random links</code> (for example, for displaying images).
+7. Work with <code>arrays</code> and <code>objects</code>.
 
 ### Installation & Usage
 1. Install the package:
