@@ -1,3 +1,5 @@
+All words that superMaker uses should be stored in 'super-maker-storage.json', hereinafter simply called 'storage'.
+
 Description of methods
 
 --------------------------------------
@@ -8,6 +10,8 @@ lorem: {
 --------------------------------------
 
     Description:
+	
+	Takes words from the storage and outputs them in random order, uses - Fisher-Yates shuffle.
 	
     string (words): Fisher-Yates shuffle
     number (Min, Max): Math.random()
@@ -34,6 +38,8 @@ sentences
 --------------------------------------
  
     Description:
+	
+	Takes words from the storage and turns them into sentences with or without hashtags and outputs them in random order, uses - Fisher-Yates shuffle.
 	
     string (words, hashtags): Fisher-Yates shuffle
     number (Min, Max): Math.random()
@@ -78,6 +84,8 @@ fullText
 --------------------------------------
 
     Description:
+	
+    Takes words from the storage and turns them into sentences with or without hashtags and outputs them randomly, uses - Fisher-Yates shuffle. You can split the sentence into parts: title, text, hashtagsFromFullText and output each part in a separate document field.
 	
     Number of 'wordMin, wordMax' and 'hashtagMin, hashtagMax', counted separately.
     
@@ -154,6 +162,9 @@ take: {
 --------------------------------------
 value	
 --------------------------------------
+     Description:
+	 
+     Returns a single value from storage, by key.
 
     Usage: 
 	
@@ -191,6 +202,8 @@ values
 
    Description:
    
+   Outputs an array of values from storage, by key.
+   
    Default value:
    duplicate: false
 
@@ -226,6 +239,10 @@ values
 --------------------------------------
 randomNumber 
 --------------------------------------
+
+  Description:
+   
+  Outputs a random number.
 
  Usage:
  
@@ -317,6 +334,10 @@ randomNumber
 --------------------------------------
 
 Description:
+   
+Outputs a random date.
+
+Description:
 
 Time format - 24 hour.
 
@@ -406,6 +427,11 @@ Without utc: true, in a UTC+3 timezone, the same call might return 2008-06-20T22
 ---------------------------------------  
  randomBoolean
 ---------------------------------------
+
+Description:
+   
+Outputs a random boolean.
+
 Usage:
 
 superMaker.randomBoolean();
@@ -441,6 +467,10 @@ Returns:
  randomCrypto
 ---------------------------------------
 
+Description:
+   
+Outputs generated cryptographically strong pseudo-random data with the given length. Uses - randomBytes().
+
 Usage:
 
 customId: superMaker.randomCrypto(16)
@@ -457,6 +487,10 @@ Returns:
 ---------------------------------------  
 randomEmailCrypto
 ---------------------------------------
+
+Description:
+   
+Outputs generated cryptographically strong pseudo-random data with a given length and frames it in '.....@gmail.com'. Uses - randomBytes().
 
 Usage:
 
