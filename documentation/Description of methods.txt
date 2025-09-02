@@ -50,7 +50,7 @@ sentences
 
     Number of 'wordMin, wordMax' and 'hashtagMin, hashtagMax', counted separately.
 
-    By default all number values are equal to - '0'.
+    All number values are equal to - '0'.
 
     Default value for - super-maker-storage.json: "key: 'words'", "key: 'hashtags'".
     Сan reassign, for example: "wordsKey: 'customWords'", "hashtagsKey: 'customHashtags'"
@@ -91,7 +91,12 @@ fullText
 	
     Extracts words from the storage, converts them into sentences with or without hashtags, and outputs them randomly using the Fisher-Yates shuffle. You can split a sentence into parts: 'title', 'text', 'hashtagsFromFullText' and output each part in a separate document field, as well as specify different output variations.
 	
+	string (words, hashtags): Fisher-Yates shuffle
+    number (Min, Max): Math.random()
+	
     Number of 'wordMin, wordMax' and 'hashtagMin, hashtagMax', counted separately.
+	
+	All number values are equal to - '0'.
     
     By default: "key: 'words'", "key: 'hashtags'"
     Сan reassign, for example: "wordsKey: 'customWords'", "hashtagsKey: 'customHashtags'"
@@ -212,7 +217,9 @@ values
    Outputs an array of values from storage by key, with various variations and output settings.
    
    Default value:
+   All number values are equal to - '0'.
    duplicate: false
+   
 
    When duplicate: true, the fisherYatesShuffle function is not used. Instead, elements are selected using pick, which directly chooses random elements from the array via Math.random(), fisherYatesShuffle is not suitable here because it creates a permutation of the array without repeats.
    -------
@@ -220,8 +227,7 @@ values
     Usage:
 	
     liked: superMaker.take.values({
-                key: 'users',
-                duplicate: true,
+                key: 'users', 
                 min: 3,
                 max: 10
             }),

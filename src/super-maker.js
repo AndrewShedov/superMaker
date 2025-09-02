@@ -154,7 +154,7 @@ const values = (value = {}) => {
   if (!Array.isArray(storageArray) || storageArray.length === 0) return [];
 
   const min = value.min ?? 0;
-  const max = Math.min(value.max ?? storageArray.length, storageArray.length);
+  const max = value.max ?? 0;
   const duplicate = value.duplicate || false;
   const count = int({ min, max });
 
