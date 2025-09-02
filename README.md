@@ -171,15 +171,15 @@ lorem: {
   },
 ```
 
- <code>words</code>
+ **words**
 
  Takes words from the storage and outputs them in random order, uses - Fisher-Yates shuffle.
 
- <code>sentences</code>
+ **sentences**
 
  Takes words from the storage and turns them into sentences with or without hashtags and outputs them in random order, uses - Fisher-Yates shuffle.
 
- <code>fullText</code>
+ **fullText**
 
  Takes words from the storage and turns them into sentences with or without hashtags and outputs them randomly, uses - Fisher-Yates shuffle. You can     split the sentence into parts: title, text, hashtagsFromFullText and output each part in a separate document field.
  
@@ -190,11 +190,11 @@ lorem: {
   },
  ```
 
-<code>value</code>
+**value**
 
 Returns a single value from storage, by key.
 
-<code>values</code>
+**values**
 
 Outputs an array of values from storage, by key.
 
@@ -206,24 +206,24 @@ randomCrypto,
 randomEmailCrypto
 ```
 
-<code>randomNumber</code>
+**randomNumber**
 
 Outputs a random number.
 
-<code>randomDate</code>
+**randomDate**
 
 Outputs a random date.
 Time format - 24 hour.
 
-<code>randomBoolean</code>
+**randomBoolean**
 
 Outputs a random boolean.
 
-<code>randomCrypto</code>
+**randomCrypto**
 
 Outputs generated cryptographically strong pseudo-random data with the given length. Uses - randomBytes().
 
-<code>randomEmailCrypto</code>
+**randomEmailCrypto**
 
 Outputs generated cryptographically strong pseudo-random data with a given length and frames it in '....@gmail.com'. Uses - randomBytes().
 
