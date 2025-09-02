@@ -212,7 +212,7 @@ Outputs a random number in a configurable range.
 
 **randomDate**
 
-Displays a random date within a configurable range.
+Displays a random date within a configurable range.<br>
 Time format - 24 hour.
 
 **randomBoolean**
