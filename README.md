@@ -229,7 +229,7 @@ Outputs generated cryptographically strong pseudo-random data with a given lengt
 
 [Full description of methods](https://github.com/AndrewShedov/superMaker/blob/main/documentation/Description%20of%20methods.txt)
 
-#### The video shows a simulation of [CRYSTAL v2.0](https://shedov.top/about-the-crystal-project/) in operation, using fake data generated with turboMaker and superMaker: <br>
+The video shows a simulation of [CRYSTAL v2.0](https://shedov.top/about-the-crystal-project/) in operation, using fake data generated with turboMaker and superMaker: <br>
 
 <p align="center">
 <a href="https://youtu.be/5V4otU4KZaA?t=2">
