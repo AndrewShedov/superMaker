@@ -1,12 +1,26 @@
 {
   "name": "super-maker",
-  "version": "0.1.18",
+  "version": "0.1.19",
   "description": "data generator",
   "main": "./src/index.js",
-    "exports": {
-        ".": "./src/index.js"
-    },
-    "type": "module",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "type": "module",
+  "keywords": [
+    "fake-data",
+    "data-generator",
+    "lorem",
+    "mock",
+    "mongodb",
+    "super",
+    "super-speed",
+    "speed",
+    "random",
+    "content",
+    "hashtags",
+    "avatars"
+  ],
   "author": {
     "name": "Andrew Shedov",
     "url": "https://shedov.top"
@@ -18,6 +32,6 @@
   },
   "homepage": "https://shedov.top",
   "files": [
-        "src"
-    ]
+    "src"
+  ]
 }
