@@ -173,15 +173,15 @@ lorem: {
 
  **words**
 
- Takes words from the storage and outputs them in random order, uses - Fisher-Yates shuffle.
+ Takes words from the storage and outputs them in random order, uses - **Fisher-Yates shuffle**.
 
  **sentences**
 
- Takes words from the storage and turns them into sentences with or without hashtags and outputs them in random order, uses - Fisher-Yates shuffle.
+ Takes words from the storage and turns them into sentences with or without hashtags and outputs them in random order, uses - **Fisher-Yates shuffle**.
 
  **fullText**
 
- Takes words from the storage and turns them into sentences with or without hashtags and outputs them randomly, uses - Fisher-Yates shuffle. You can     split the sentence into parts: title, text, hashtagsFromFullText and output each part in a separate document field.
+ Takes words from the storage and turns them into sentences with or without hashtags and outputs them randomly, uses - **Fisher-Yates shuffle**. You can     split the sentence into parts: title, text, hashtagsFromFullText and output each part in a separate document field.
  
  ```js
  take: {
@@ -221,11 +221,11 @@ Outputs a random boolean.
 
 **randomCrypto**
 
-Outputs generated cryptographically strong pseudo-random data with the given length. Uses - randomBytes().
+Outputs generated cryptographically strong pseudo-random data with the given length <code>(superMaker.randomCrypto(16))</code>. Uses - <code>randomBytes()</code>.
 
 **randomEmailCrypto**
 
-Outputs generated cryptographically strong pseudo-random data with a given length and frames it in '....@gmail.com'. Uses - randomBytes().
+Outputs generated cryptographically strong pseudo-random data with a given length <code>(superMaker.randomEmailCrypto(5))</code> and frames it in '06e675b854@gmail.com'. Uses - <code>randomBytes()</code>.
 
 [Full description of methods](https://github.com/AndrewShedov/superMaker/blob/main/documentation/Description%20of%20methods.txt)
 
