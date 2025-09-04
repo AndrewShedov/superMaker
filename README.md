@@ -4,7 +4,7 @@
 
 # superMaker
 Data generator designed specifically for [turboMaker](https://www.npmjs.com/package/turbo-maker).<br>
-Generates <code>random</code> <code>texts</code>, <code>hashtags</code>, <code>words</code>, <code>names</code>, <code>emails</code>, <code>url links (for example: images)</code>, and much more.
+Generates <code>random</code> <code>texts</code>, <code>hashtags</code>, <code>words</code>, <code>emails</code>, <code>url links (for example: images)</code>, and much more.
 
 ### Ideal for
 
