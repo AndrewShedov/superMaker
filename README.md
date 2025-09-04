@@ -14,7 +14,7 @@ Generates <code>random</code> <code>texts</code>, <code>hashtags</code>, <code>w
 ### Features
 
 1. Ability to create a fully custom data storage to be used during generation.
-2. Uses **Uses Fisher-Yates shuffle** - a reliable shuffling algorithm.
+2. Uses **Fisher-Yates shuffle** - a reliable shuffling algorithm.
 3. Text generation with hashtags.
 4. Automatic hashtag extraction.
 5. Generation of <code>unique</code> <code>email</code>, <code>ID</code>, etc., using <code>randomBytes()</code>.
