@@ -177,7 +177,7 @@ lorem: {
 
  **sentences**
 
- Takes words from the store and turns them into sentences with or without hashtags and outputs them randomly, uses **Fisher-Yates shuffling**. You can specify different output variations.
+ Takes words from the store and turns them into sentences with or without hashtags and outputs them randomly, uses **Fisher-Yates shuffle**. You can specify different output variations.
 
  **fullText**
 
