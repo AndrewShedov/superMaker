@@ -17,7 +17,7 @@ Generates <code>random</code> <code>texts</code>, <code>hashtags</code>, <code>w
 2. Uses **Fisher-Yates shuffle** - a reliable shuffling algorithm.
 3. Text generation with hashtags.
 4. Automatic hashtag extraction.
-5. Generation of <code>unique</code> <code>email</code>, <code>ID</code>, etc., using <code>randomBytes()</code>.
+5. Generation of unique <code>email</code>, <code>ID</code>, etc., using <code>randomBytes()</code>.
 6. Work with <code>arrays</code> and <code>objects</code>.
 
 ### Installation & Usage
