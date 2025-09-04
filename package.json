@@ -1,6 +1,6 @@
 {
   "name": "super-maker",
-  "version": "0.1.41",
+  "version": "0.1.42",
   "description": "data generator",
   "main": "./src/index.js",
   "exports": {
@@ -13,7 +13,6 @@
     "data-generator",
     "lorem",
     "mongodb",
-    "super",
     "super-speed",
     "speed",
     "random",
