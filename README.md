@@ -4,7 +4,7 @@
 
 # superMaker
 Data generator designed specifically for [turboMaker](https://www.npmjs.com/package/turbo-maker).<br>
-Generates <code>random</code> <code>texts</code>, <code>hashtags</code>, <code>words</code>, <code>emails</code>, <code>ID</code>, <code>URL</code>, and much more.
+Generates <code>random</code> <code>texts</code>, <code>hashtags</code>, <code>words</code>, <code>emails</code>, <code>id</code>, <code>url</code>, and much more.
 
 ### Ideal for
 
@@ -17,7 +17,7 @@ Generates <code>random</code> <code>texts</code>, <code>hashtags</code>, <code>w
 2. Uses **Fisher-Yates shuffle** - a reliable shuffling algorithm.
 3. Text generation with hashtags.
 4. Automatic hashtag extraction.
-5. Generation of unique <code>email</code>, <code>ID</code>, etc., using <code>randomBytes()</code>.
+5. Generation of unique <code>email</code>, <code>id</code>, etc., using <code>randomBytes()</code>.
 6. Work with <code>arrays</code> and <code>objects</code>.
 
 ### Installation & Usage
