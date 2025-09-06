@@ -384,8 +384,8 @@ To ensure the date reflects the specified hour, minute, second, and ms values in
 Example:
 
 superMaker.randomDate({
-  min: { year: 2005, month: 2, day: 28, hour: 1, minute: 1, second: 1, ms: 1 },
-  max: { year: 2010, month: 7, day: 21, hour: 1, minute: 1, second: 1, ms: 1 },
+  min: { year: 2005, month: 2, day: 21, hour: 1, minute: 1, second: 1, ms: 1 },
+  max: { year: 2010, month: 7, day: 28, hour: 1, minute: 1, second: 1, ms: 1 },
   utc: true
 })
 
