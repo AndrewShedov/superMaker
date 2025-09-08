@@ -6,7 +6,7 @@
 Data generator designed specifically for [turboMaker](https://www.npmjs.com/package/turbo-maker).<br>
 Generates random <code>text</code>, <code>hashtags</code>, <code>words</code>, <code>dates</code>, <code>emails</code>, <code>id</code>, <code>url</code>, <code>arrays</code>, <code>booleans</code>, etc.
 
-### Ideal for
+### Suitable for
 
 - Populating databases and creating fake content (<code>posts</code>, <code>users</code>, <code>products</code>, etc.)
 - Rapid prototyping
