@@ -8,7 +8,7 @@ Generates random <code>text</code>, <code>hashtags</code>, <code>words</code>, <
 
 ### Suitable for
 
-- Populating databases and creating fake content (<code>posts</code>, <code>users</code>, <code>products</code>, etc.)
+- Populating databases and creating synthetic content (<code>posts</code>, <code>users</code>, <code>products</code>, etc.)
 - Rapid prototyping
 
 ### Features

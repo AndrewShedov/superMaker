@@ -1,6 +1,6 @@
 {
   "name": "super-maker",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "data generator",
   "main": "./src/index.js",
   "exports": {
@@ -8,8 +8,8 @@
   },
   "type": "module",
   "keywords": [
-    "fake-data",
-    "fake-date",
+    "synthetic-data",
+    "synthetic-date",
     "data-generator",
     "lorem",
     "mongodb",
