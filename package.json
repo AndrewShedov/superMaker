@@ -1,6 +1,6 @@
 {
   "name": "super-maker",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Data generator designed specifically for turboMaker.",
   "main": "./src/index.js",
   "exports": {
@@ -11,9 +11,6 @@
     "synthetic-data",
     "data-generator",
     "lorem",
-    "mongodb",
-    "super-speed",
-    "speed",
     "random",
     "crypto",
     "randomBytes",
