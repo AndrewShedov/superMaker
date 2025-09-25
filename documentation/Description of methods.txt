@@ -156,7 +156,7 @@ fullText
 	
     title: #Leda astronae #Oberon ximora nuvion dravion skavari solvenar nuvion gralith. Mirthos virella yxelan draxil eltheon #Neptune #Mars.
     text: Draxil zorvian orleth quarnex #Oberon cryonex nexura ximora #Makemake #Jupiter. Vireon gralith zephirion stelmara vorthal yxelan #Leda #Jupiter quarnex tarnyx. Stelmara #Makemake #Venus zenthul nexura zenthul tarnyx stelmara. Eltheon zenthul zorvian nexura lunara quarnex #Carme stelmara #Elara #Mars astronae.
-    hashtags:Array (9)("#leda", "#oberon", "#neptune", "#mars", "#makemake", "#jupiter", "#venus", "#carme", "#elara")
+    hashtags:Array (9)("leda", "oberon", "neptune", "mars", "makemake", "jupiter", "venus", "carme", "elara")
 	
 --------------------------------------
 /fullText	

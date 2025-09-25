@@ -5,6 +5,10 @@ export const extractHashtags = (text) => {
     return matches ? [...new Set(matches.map(tag => tag.toLowerCase()))] : [];
 };
 
-export const cleanHashtag = (tag) => tag.replace(/\.$/, '');
+//with #
+// export const cleanHashtag = (tag) => tag.replace(/\.$/, '');
+
+//without #
+export const cleanHashtag = (tag) => tag.replace(/^#/, '').replace(/\.$/, '');
 
 export const word = (words) => fisherYatesShuffle(words)[0];
