@@ -1,6 +1,6 @@
 {
   "name": "super-maker",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "Data generator designed specifically for turboMaker.",
   "main": "./src/index.js",
   "exports": {

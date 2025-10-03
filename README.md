@@ -226,7 +226,7 @@ Outputs generated cryptographically strong pseudo-random data with the given len
 
 Outputs generated cryptographically strong pseudo-random data with a given length <code>superMaker.randomEmailCrypto(5)</code> and frames it in '06e675b854@gmail.com'. Uses - <code>randomBytes()</code>.
 
-[Full description of methods](https://github.com/AndrewShedov/superMaker/blob/main/docs/Description%20of%20methods.txt)
+[Full description of methods](https://github.com/AndrewShedov/superMaker/blob/main/docs/description%20of%20methods.txt)
 
 
 Simulation of [CRYSTAL v2.0](https://shedov.top/about-the-crystal-project/) operation using synthetic data generated with turboMaker and superMaker:<br>
