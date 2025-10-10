@@ -13,7 +13,7 @@ Generates random data: <code>text</code>, <code>hashtags</code>, <code>words</co
 ### Features
 
 1. Ability to create a fully custom data storage to be used during generation.
-2. Uses **Fisher-Yates shuffle** - a reliable shuffling algorithm.
+2. Uses **Fisher-Yates shuffle** — a reliable shuffling algorithm.
 3. Text generation with hashtags.
 4. Automatic hashtag extraction.
 5. Generation of unique <code>email</code>, <code>id</code>, etc., using <code>randomBytes()</code>.
@@ -171,7 +171,7 @@ lorem: {
 
  **words**
 
- Takes words from the storage and outputs them in random order, uses - **Fisher-Yates shuffle**.
+ Takes words from the storage and outputs them in random order, uses — **Fisher-Yates shuffle**.
 
  **sentences**
 
