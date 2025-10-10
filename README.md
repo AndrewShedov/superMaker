@@ -235,7 +235,6 @@ Simulation of [CRYSTAL v2.0](https://shedov.top/about-the-crystal-project/) oper
   <img src="https://raw.githubusercontent.com/AndrewShedov/superMaker/refs/heads/main/assets/screenshot_1.png" style="width: 100%; max-width: 100%;" alt="CRYSTAL v1.0 features"/>
 </a>
 </p>
-<br>
 
 [![SHEDOV.TOP](https://img.shields.io/badge/SHEDOV.TOP-black?style=for-the-badge)](https://shedov.top/) 
 [![CRYSTAL](https://img.shields.io/badge/CRYSTAL-black?style=for-the-badge)](https://crysty.ru/AndrewShedov)
