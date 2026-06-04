@@ -226,12 +226,13 @@ Outputs generated cryptographically strong pseudo-random data with a given lengt
 
 [Full description of methods](https://github.com/AndrewShedov/superMaker/blob/main/docs/description%20of%20methods.txt)
 
+<br>
 
-Simulation of [CRYSTAL v2.0](https://shedov.top/about-the-crystal-project/) operation using synthetic data generated with turboMaker and superMaker:<br>
+### [Simulation](https://shedov.top/simulation-of-crystal-v2-0-operation/) of [CRYSTAL v2.0](https://shedov.top/about-the-crystal-project/) operation using synthetic data generated with [turboMaker](https://www.npmjs.com/package/turbo-maker) and superMaker. Additionally, [mongoCollector](https://www.npmjs.com/package/mongo-collector) and [mongoChecker](https://www.npmjs.com/package/mongo-checker) are used here:<br>
 
 <p align="center">
 <a href="https://youtu.be/5V4otU4KZaA?t=2">
-  <img src="https://raw.githubusercontent.com/AndrewShedov/superMaker/refs/heads/main/assets/screenshot_1.png" style="width: 100%; max-width: 100%;" alt="CRYSTAL v1.0 features"/>
+  <img src="https://raw.githubusercontent.com/AndrewShedov/superMaker/refs/heads/main/assets/screenshot_1.1.png" style="width: 100%; max-width: 100%;" alt="CRYSTAL v1.0 features"/>
 </a>
 </p>
 
